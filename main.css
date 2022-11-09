@@ -1,0 +1,180 @@
+/* HTML Reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* End of HTML Reset */
+
+/* Global */
+:root {
+  --brand-blue: #1c7eb2;
+  --brand-dark-blue: #00274c;
+  --font-size-xs: 14px;
+}
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+/* End of Global */
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.container-content {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  background: #eef2f4;
+  height: 48px;
+  font-size: var(--font-size-xs);
+}
+.btn-investor {
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+.btn-investor i {
+  margin-left: 40px;
+}
+
+.main-header {
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  font-size: var(--font-size-xs);
+}
+.main-header__right {
+  margin-left: auto;
+}
+.main-header__right .menu {
+  list-style-type: none;
+  column-gap: 30px;
+}
+.main-header__right .menu a {
+  text-decoration: none;
+  color: #000;
+  transition: .3s;
+}
+.main-header__right .menu a:hover {
+  color: var(--brand-blue);
+}
+.search-wrapper {
+  margin-left: 40px;
+}
+.search-wrapper i {
+  color: var(--brand-blue);
+}
+
+#main-section {
+  position: relative;
+  
+  height: 80vh;
+  background-image: url(assets/main-section.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  color: var(--brand-dark-blue);
+}
+.first-text {
+  font-weight: 400;
+  color: var(--brand-blue);
+}
+
+#second-section {
+  padding: 40px 0;
+  background-color: var(--brand-dark-blue);
+}
+.section-2__grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  color: #fff;
+}
+.section-2__grid h2 {
+  margin-bottom: 20px;
+}
+.section-2__grid h2 span {
+  color: var(--brand-blue);
+}
+.section-2__text {
+  font-size: var(--font-size-xs);
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+.custom-title {
+  margin-top: 40px;
+  padding: 0 25px;
+  line-height: 25px;
+  color: var(--brand-blue);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.icon__item {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+}
+.icon__item p {
+  font-size: 10px;
+  color: #4686ac;
+}
+.icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.icon__wrapper i {
+  font-size: 40px;
+}
